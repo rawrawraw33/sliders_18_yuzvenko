@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" maximum-scale="1.0 , minimum-scale=1.0"> 
+        <link href="js/slick.min.js" rel="stylesheet" />
+        <link href="js/slick.js" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/index.css" type="text/css"/>
+        <title>Sliders</title>
+    </head>
+    <body style='overflow-x:hidden;'>
+        <main>
+            <div class="index_container">
+                <p>Here you can see the sliders:</p>
+                <ul>
+                    <li><a href="slick/slick.html"target="_blank">Slick</a></li>
+                    <li><a href="swiper/swiper.html" target="_blank">Swiper</a></li>
+                    <li><a href="owl-carousel/owl.html" target="_blank">Owl-carousel</a></li>
+                    
+                </ul>
+            </div>
+            <div class="zoom ">
+                <div class="zoom-demo">
+                    <img id="demo-2" src="./swiper/img/slider-swiper8.jpg" >
+                </div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="./swiper/js/jquery.loupe.min.js"></script>
+        
+        <script>
+        $('#demo-2').loupe({
+            width: 100, // width of magnifier
+            height: 100, // height of magnifier
+            loupe: 'loupe' // css class for magnifier
+            
+        });
+        </script>
+
+
+    </body>
+
+
+
+</html>

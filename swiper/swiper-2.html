@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" maximum-scale="1.0 , minimum-scale=1.0"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper2.css" type="text/css"/>
+    <title>Swiper</title>
+  </head>
+  <body>
+    <h1>Nature</h1>
+   
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider-swiper1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper2.jpg" alt="2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper3.jpg" alt="3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper4.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper6.jpg" alt="6" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper7.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper8.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper9.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper10.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider-swiper1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper4.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper6.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper7.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper8.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper9.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-swiper10.jpg" alt="" />>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+        
+              
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop:true,
+        thumbs: {
+          swiper: swiper,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            autoplay:false,
+          spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+          
+          spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+            
+          spaceBetween: 40
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+
+
+
+        
+
+
+
+</html>
